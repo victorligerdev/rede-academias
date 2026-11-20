@@ -1,4 +1,4 @@
-package br.edu.bd2.academia.modelo;
+package br.edu.bd2.academia.model.enums;
 
 /** Duração do plano. O número de meses é usado para calcular valor total e data de fim. */
 public enum Periodicidade {

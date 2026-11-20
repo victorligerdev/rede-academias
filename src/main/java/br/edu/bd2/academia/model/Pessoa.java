@@ -1,4 +1,6 @@
-package br.edu.bd2.academia.modelo;
+package br.edu.bd2.academia.model;
+
+import br.edu.bd2.academia.model.enums.Sexo;
 
 import java.time.LocalDate;
 

@@ -1,4 +1,4 @@
-package br.edu.bd2.academia.modelo;
+package br.edu.bd2.academia.model;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
