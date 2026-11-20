@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+             xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="academiaPU" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>br.edu.bd2.academia.model.Pessoa</class>
+        <class>br.edu.bd2.academia.model.Aluno</class>
+        <class>br.edu.bd2.academia.model.Funcionario</class>
+        <class>br.edu.bd2.academia.model.FichaMedica</class>
+        <class>br.edu.bd2.academia.model.Unidade</class>
+        <class>br.edu.bd2.academia.model.CategoriaPlano</class>
+        <class>br.edu.bd2.academia.model.Modalidade</class>
+        <class>br.edu.bd2.academia.model.Plano</class>
+        <class>br.edu.bd2.academia.model.ServicoAdicional</class>
+        <class>br.edu.bd2.academia.model.Matricula</class>
+        <class>br.edu.bd2.academia.model.Pagamento</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <properties>
+            <!-- Ajuste URL, usuário e senha para o PostgreSQL de vocês -->
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/academia"/>
+            <property name="javax.persistence.jdbc.user" value="postgres"/>
+            <property name="javax.persistence.jdbc.password" value="postgres"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL95Dialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <!-- Ative hibernate.show_sql para exibir o SQL gerado. -->
+            <property name="hibernate.show_sql" value="false"/>
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
